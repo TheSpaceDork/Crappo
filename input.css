@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+} */
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  background-color: #0d0d2b;
+}
+
+#hero {
+  background: url("images/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.colorChange {
+  background-color: #2b076e;
+
+  transition: all 700ms ease-in-out;
+}
+.morecolorchange {
+  color: white !important;
+  transition: all 700ms ease-in-out;
+}
+.trans_p {
+  display: block;
+  color: white;
+  transition: all 700ms ease-in-out;
+}
+.trans_div {
+  background-color: #3679e9;
+  transition: all 900ms ease-in-out;
+}
+.newsletter {
+  background: url("images/newsletter-box.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+i:hover {
+  color: #3679e9;
+  transition: all 400ms ease-in-out;
+}
+.open {
+  right: 0;
+  transition: all 700ms ease-in-out;
+}
+.close {
+  right: -100%;
+  transition: all 700ms ease-in-out;
+}

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon.ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon.ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon.ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon.ico/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon.ico/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <script
+      src="https://kit.fontawesome.com/9a417ab140.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="/JS/script.js" defer></script>
+    <title>Crappo</title>
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="min-w-[100%] min-h-[120vh] lg:min-h-[100vh] pl-12 pr-8 lg:px-20 block relative overflow-x-hidden"
+    >
+      <nav class="container py-8 pl-8 pr-0 lg:px-8 relative">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center justify-center w-[15%] space-x-5">
+            <img src="images/Logo.png" alt="logo" />
+            <h1 class="text-white text-3xl">Crappo</h1>
+          </div>
+          <div class="hidden lg:block">
+            <ul class="list-none text-white flex items-center space-x-10">
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="border-r-[1px] pr-5 border-r-[#F2F2F2]">
+                <a href="#">Login</a>
+              </li>
+              <li
+                class="bg-[#3671E9] px-10 py-2 rounded-full hover:bg-opacity-30"
+              >
+                <a href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+          <div id="openMenu" class="lg:hidden block text-white ml-9">
+            <i onclick="openNav();" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile dropdown or left lol or right? -->
+      <div
+        id="menu"
+        class="absolute duration-1000 p-6 right-[-100%] top-0 w-[50%] block bg-opacity-40 backdrop-blur-sm z-50 lg:hidden h-[60vh] bg-[#0d0d29] shadow-xl rounded-l-xl"
+      >
+        <div
+          onclick="openNav();"
+          class="text-white font-bold absolute top-10 right-[34px]"
+        >
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="mt-16">
+          <ul class="list-none text-white flex flex-col items-center space-y-5">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="">
+              <a href="#">Login</a>
+            </li>
+            <li
+              class="bg-[#3671E9] px-10 py-2 rounded-full hover:bg-opacity-30"
+            >
+              <a href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Main hero content -->
+      <div
+        class="flex flex-col lg:flex-row px-5 py-2 mt-2 justify-between w-[95%] items-center"
+      >
+        <!-- Left side -->
+        <div class="flex flex-col text-white py-2">
+          <div
+            class="pl-[5px] pr-3 rounded-full py-1 bg-[#ffffff1a] flex w-[100%] lg:w-[70%]"
+          >
+            <div
+              class="save px-3 rounded-full bg-[white] mr-5 text-[#0D0D2B] font-bold"
+            >
+              <p class="whitespace-nowrap">Save 75%</p>
+            </div>
+            <p class="text-sm whitespace-nowrap">
+              For the Black Friday weekend
+            </p>
+          </div>
+          <h1
+            class="down text-white text-4xl lg:text-5xl font-bold w-[100%] lg:w-[70%] mt-10 leading-[55px] lg:leading-[70px]"
+          >
+            Fastest & secure platform to invest in crypto
+          </h1>
+          <p
+            class="down text-xs mt-8 w-[100%] lg:w-[40%] leading-7 font-semibold"
+          >
+            Buy and sell cryptocurrencies, trusted by 10M wallets with over $30
+            billion in transactions.
+          </p>
+          <div
+            class="save bg-[#3671E9] px-7 py-3 flex justify-between items-center rounded-full w-[60%] lg:min-w-[190px] md:w-[30%] mt-6"
+          >
+            <p class="font-bold whitespace-nowrap">Try for FREE</p>
+            <div
+              class="bg-white h-8 w-8 rounded-full flex items-center justify-center font-bold text-lg text-[#3679E9] whitespace-nowrap"
+            >
+              <span>></span>
+            </div>
+          </div>
+        </div>
+        <!-- Right side and Image div -->
+        <div class="min-w-[100%] lg:min-w-[40%]">
+          <img
+            src="/images/Illustration.png"
+            alt=""
+            class="w-full scale h-[50vh]"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Second section -->
+    <section
+      id="why"
+      class="bg-[#0D0D2B] min-w-[100%] min-h-[130vh] lg:min-h-[60vh] md:min-h-[100vh] pb-12 px-12 lg:px-20 text-white pt-12"
+    >
+      <!-- Top cards -->
+      <div
+        class="down flex flex-col md:flex-row justify-between lg:space-x-20 items-center"
+      >
+        <!-- Item 1 -->
+
+        <div class="flex items-center space-x-5 w-full mb-10">
+          <div
+            class="flex h-16 w-16 justify-center items-center rounded-full bg-[#ffffff1a]"
+          >
+            <img src="/images/Bar Chart.png" />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <h1 class="text-3xl md:text-4xl font-bold">$30B</h1>
+            <p class="lg:whitespace-nowrap">Digital currency exchanged</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+
+        <div class="flex items-center space-x-5 w-full mb-10">
+          <div
+            class="flex h-16 w-16 justify-center items-center rounded-full bg-[#ffffff1a]"
+          >
+            <img src="/images/Person.png" />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <h1 class="text-3xl lg:text-4xl font-bold">10M+</h1>
+            <p>Trusted Wallets Investor</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+
+        <div class="flex items-center space-x-5 w-full mb-10">
+          <div
+            class="flex h-16 w-16 justify-center items-center rounded-full bg-[#ffffff1a]"
+          >
+            <img src="/images/Earth.png" />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <h1 class="text-3xl md:text-4xl font-bold">195</h1>
+            <p>Countries Supported</p>
+          </div>
+        </div>
+      </div>
+      <!-- Content for second section -->
+      <div
+        class="flex-col flex lg:flex-row px-5 py-2 mt-2 justify-between w-[95%] items-center"
+      >
+        <!-- Left side -->
+        <div class="scale w-[100%] lg:min-w-[40%]">
+          <img
+            src="/images/Illustrations2.png"
+            alt=""
+            class="w-full scale h-[45vh] lg:h-[40vh] lg:w-[40vw]"
+          />
+        </div>
+
+        <!-- Right side and Image div -->
+        <div class="down min-w-full lg:min-w-[40%]">
+          <h1 class="text-3xl lg:text-5xl font-bold leading-relaxed mb-8">
+            Why you should choose CRAPPO
+          </h1>
+          <p
+            class="w-full lg:min-w-[60%] leading-relaxed text-xs lg:text-sm mb-8"
+          >
+            Experience the next generation cryptocurrency platform. No financial
+            borders, extra fees, and fake reviews.
+          </p>
+          <div class="bg-[#3671E9] px-7 py-4 rounded-full w-[150px]">
+            <a href="#" class="whitespace-nowrap">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Third section -->
+    <section
+      id="earning"
+      class="bg-[#0D0D2B] min-w-[100%] min-h-[50vh] px-12 lg:px-20 text-white pt-12 relative"
+    >
+      <div class="down mx-auto text-center">
+        <h1 class="text-3xl lg:text-4xl font-bold mb-9 w-full">
+          Check how much you earn
+        </h1>
+        <div class="w-full lg:w-[30%] mx-auto text-center">
+          <p class="text-xs font-bold">
+            Let’s check your hash rate to see how much you will earn today,
+            Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+      <!-- Hash calculator -->
+      <div
+        class="scale w-[90%] md:w-[65%] rounded-3xl shadow-2xl absolute bottom-[-480px] md:bottom-[-35vh] right-0 left-0 z-10 p-8 md:p-12 min-h-[60vh] md:min-h-[55vh] mx-auto bg-white"
+      >
+        <div
+          class="flex flex-col lg:flex-row w-full items-start lg:items-center justify-between"
+        >
+          <input
+            type="text"
+            name="calculate"
+            id=""
+            placeholder="Enter your hash rate"
+            class="border-b w-full lg:w-[50%] mb-10"
+          />
+          <select
+            name="hash"
+            id=""
+            class="border-b w-full lg:w-[30%] text-[#0d0d28] outline-none font-bold mb-10"
+          >
+            <option value="">TH/s</option>
+            <option value="">H/s</option>
+            <option value="">KH/s</option>
+            <option value="">MH/s</option>
+            <option value="">GH/s</option>
+          </select>
+
+          <div>
+            <button type="submit" class="px-7 py-4 rounded-full bg-[#3671E9]">
+              Calculate
+            </button>
+          </div>
+        </div>
+
+        <!-- content in white overflowing div -->
+        <h2 class="text-xl lg:text-3xl text-[#3671e9] mb-7 mt-20 font-bold">
+          ESTIMATED 24 HOUR REVENUE:
+        </h2>
+        <h1 class="text-4xl text-[#0d0d2b] mb-7 font-bold whitespace-nowrap">
+          0.055 130 59 ETH <br class="lg:hidden" />
+          <span class="text-[#3671e9]">($1275)</span>
+        </h1>
+        <p class="text-xs text-[#0d0d2b]">
+          Revenue will change based on mining difficulty and Ethereum price.
+        </p>
+      </div>
+    </section>
+    <!-- Fourth section -->
+    <section
+      class="bg-[#f9fafb] min-w-[100%] min-h-[150vh] px-6 lg:px-20 text-white pt-12"
+    >
+      <h1
+        class="down text-xl lg:text-5xl text-[#0d0d2b] mx-auto w-full lg:w-[70%] leading-relaxed text-center mt-[76vh] lg:mt-[39vh] font-bold"
+      >
+        Trade securely and market the high growth cryptocurrencies.
+      </h1>
+      <!-- Cards section -->
+      <div
+        class="left w-full flex flex-col lg:flex-row items-center justify-between"
+      >
+        <!-- Item 1 -->
+        <div
+          onclick="changeColor1();"
+          id="1"
+          class="left1 flex flex-col items-center p-12 bg-white w-full md:min-w-[27vw] rounded-xl min-h-[40vh] lg:min-h-[60vh] mt-16 text-[#828282] focus:bg-[#2B076E] group pointer-events-auto cursor-pointer duration-700"
+        >
+          <img src="/images/logos_bitcoin.png" alt="" />
+          <h1
+            id="1_h1"
+            class="text-[#0d0d2b] mt-10 font-bold text-4xl mb-10 group-focus:bg-white duration-700"
+          >
+            Bitcoin <span class="text-[#BDBDBD] font-light">BTC</span>
+          </h1>
+          <p id="main_txt1" class="text-center mb-10">
+            Digital currency in which a record of transactions is maintained.
+          </p>
+          <div
+            id="btn_trans_main1"
+            class="bg-white px-2 py-2 rounded-full flex items-center justify-center font-bold text-lg text-[#3679E9] border border-[#3679e9] transition-all duration-800"
+          >
+            <p
+              class="hidden mr-3 font-semibold transition-all duration-700"
+              id="btn_transition1"
+            >
+              Start mining
+            </p>
+            <p
+              id="last_p1"
+              class="duration-1000 bg-white rounded-full px-4 py-2"
+            >
+              >
+            </p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div
+          onclick="changeColor2();"
+          id="2"
+          class="left2 flex flex-col items-center p-12 bg-white w-full md:min-w-[27vw] rounded-xl min-h-[50vh] lg:min-h-[60vh] mt-16 text-[#828282] focus:bg-[#2B076E] group pointer-events-auto cursor-pointer duration-700"
+        >
+          <img src="/images/Icon (1).png" alt="" />
+          <h1
+            id="2_h1"
+            class="text-[#0d0d2b] mt-10 font-bold text-4xl mb-10 group-focus:bg-white duration-700 whitespace-nowrap"
+          >
+            Ethereum <span class="text-[#BDBDBD] font-light">ETH</span>
+          </h1>
+          <p id="main_txt2" class="text-center mb-10">
+            Blockchain technology to create and run decentralized digital
+            applications.
+          </p>
+          <div
+            id="btn_trans_main2"
+            class="bg-white px-2 py-2 rounded-full flex items-center justify-center font-bold text-lg text-[#3679E9] border border-[#3679e9] transition-all duration-800"
+          >
+            <p
+              class="hidden mr-3 font-semibold transition-all duration-700"
+              id="btn_transition2"
+            >
+              Start mining
+            </p>
+            <p
+              id="last_p2"
+              class="duration-1000 bg-white rounded-full px-4 py-2"
+            >
+              >
+            </p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div
+          onclick="changeColor();"
+          id="3"
+          class="left3 flex flex-col mb-10 items-center p-12 bg-white w-full md:min-w-[40vw] rounded-xl min-h-[50vh] lg:min-h-[60vh] mt-16 text-[#828282] focus:bg-[#2B076E] group pointer-events-auto cursor-pointer duration-700"
+        >
+          <img src="/images/simple-icons_litecoin.png" alt="" />
+          <h1
+            id="3_h1"
+            class="text-[#0d0d2b] mt-10 font-bold text-4xl mb-10 group-focus:bg-white duration-700 whitespace-nowrap"
+          >
+            Litecoin <span class="text-[#BDBDBD] font-light">LTC</span>
+          </h1>
+          <p id="main_txt" class="text-center mb-10">
+            Cryptocurrency that enables instant payments to anyone in the world.
+          </p>
+          <div
+            id="btn_trans_main"
+            class="bg-white px-2 py-2 rounded-full flex items-center justify-center font-bold text-lg text-[#3679E9] border border-[#3679e9] transition-all duration-800"
+          >
+            <p
+              class="hidden mr-3 font-semibold transition-all duration-700"
+              id="btn_transition"
+            >
+              Start mining
+            </p>
+            <p
+              id="last_p"
+              class="duration-1000 bg-white rounded-full px-4 py-2"
+            >
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#2B076E] min-w-full min-h-[300vh] lg:min-h-[300vh] pt-20 text-white"
+    >
+      <h1
+        class="scale text-center mx-auto font-bold leading-[30px] lg:leading-[60px] text-xl lg:text-5xl w-[80%]"
+      >
+        Market statements, portfolio, and run the infrastructure of your choice
+      </h1>
+      <div
+        class="w-[90%] mx-auto px-8 lg:px-20 flex flex-col lg:flex-row mt-28 justify-between mb-24"
+      >
+        <!-- Left side -->
+        <div class="w-full lg:w-[45%] space-y-5 lg:space-y-10 mb-5">
+          <h1 class="text-2xl lg:text-3xl font-bold">Invest Smart</h1>
+          <p class="down text-md w-full lg:w-[75%]">
+            Get full statistic information about the behavior of buyers and
+            sellers will help you to make the decision.
+          </p>
+          <div
+            class="scale px-12 py-3 rounded-full bg-[#3679e9] w-[45%] lg:w-[28%] whitespace-nowrap font-bold flex justify-center items-center mb-5"
+          >
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <!-- Right side -->
+        <div class="scale">
+          <img src="images/Chart.png" alt="" />
+        </div>
+      </div>
+      <!-- SEcond div with images and text -->
+      <div
+        class="w-[100%] flex flex-col-reverse lg:flex-row px-8 lg:px-6 justify-between"
+      >
+        <!-- \LEft side -->
+        <div class="scale mt-5">
+          <img src="images/Statistic.png" alt="" />
+        </div>
+        <!-- Right side -->
+        <div class="space-y-5 lg:space-y-10 w-full lg:w-[40%]">
+          <h1 class="scale text-xl lg:text-3xl font-bold">
+            Detailed Statistics
+          </h1>
+          <p class="down text-md w-full lg:w-[75%]">
+            View all mining related information in realtime, at any point at any
+            location and decide which polls you want to mine in.
+          </p>
+          <div
+            class="scale px-12 py-3 mb-5 rounded-full bg-[#3679e9] w-[45%] lg:w-[28%] whitespace-nowrap font-bold flex justify-center items-center"
+          >
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- Third div with images and text -->
+      <div
+        class="w-full lg:w-[90%] mx-auto px-8 lg:px-20 flex flex-col lg:flex-row mt-32 justify-between mb-24"
+      >
+        <!-- Left side -->
+        <div class="w-full lg:w-[45%] space-y-10">
+          <h1 class="scale text-xl lg:text-3xl font-bold">
+            Grow your profit and track your investments
+          </h1>
+          <p class="down text-md w-full lg:w-[75%]">
+            Use advanced analytical tools. Clear TradingView charts let you
+            track current and historical profit investments.
+          </p>
+          <div
+            class="scale px-12 py-3 rounded-full bg-[#3679e9] w-[45%] lg:w-[28%] whitespace-nowrap font-bold flex justify-center items-center"
+          >
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <!-- Right side -->
+        <div class="scale mt-10">
+          <img src="images/Table.png" alt="" />
+        </div>
+      </div>
+      <!-- centered blue box for newsletter -->
+      <div
+        class="scale newsletter mt-36 mx-auto w-[95%] lg:w-[80%] bg-[#3671e9] px-8 lg:px-12 py-14 h-[60vh] lg:h-[40vh] flex flex-col lg:flex-row justify-between items-start lg:items-center rounded-3xl"
+      >
+        <!-- Left side -->
+        <div class="w-full lg:w-[30%] space-y-10">
+          <h1 class="text-xl lg:text-4xl font-bold">Start mining now</h1>
+          <p>
+            Join now with CRAPPO to get the latest news and start mining now
+          </p>
+        </div>
+
+        <!-- Subscribe side on the right -->
+        <div
+          class="flex w-full flex-col lg:flex-row lg:w-[50%] space-x-10 items-start justify-center"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            class="outline-none border-b border-b-white bg-[#3671e9] placeholder-white w-full lg:w-[80%] mb-10"
+            id=""
+          />
+          <button
+            class="px-8 py-4 rounded-full bg-white text-[#0d0d2b] font-bold"
+          >
+            <a href="#">Subscribe</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="min-w-full min-h-[80vh] bg-[#0d0d2b] px-6 lg:px-16 py-14 text-white"
+    >
+      <div
+        class="flex flex-col lg:flex-row container items-center justify-between min-w-full"
+      >
+        <div class="space-x-5 flex w-full lg:w-[35%]">
+          <img src="images/Logo.png" alt="" />
+          <h1 class="text-3xl font-bold">CRAPPO</h1>
+        </div>
+        <div class="w-full lg:w-[25%] text-center mb-10">
+          <h1
+            class="text-xl text-center lg:text-3xl font-bold mb-10 whitespace-nowrap mt-10 lg:mt-0"
+          >
+            Quick Link
+          </h1>
+          <ul class="space-y-5 text-center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-[25%] text-center mb-10">
+          <h1 class="text-xl lg:text-3xl font-bold mb-10">Resources</h1>
+          <ul class="space-y-5 text-center whitespace-nowrap">
+            <li><a href="#">Download Whitepaper</a></li>
+            <li><a href="#">Smart Token</a></li>
+            <li><a href="#">Blockchain Explorer</a></li>
+            <li><a href="#">Crypto API</a></li>
+            <li><a href="#">Interest</a></li>
+          </ul>
+        </div>
+        <div
+          class="min-w-full lg:min-w-[35%] flex flex-col items-center justify-center text-center"
+        >
+          <h1
+            class="font-bold text-xl lg:text-4xl mb-10 lg:w-[100%] leading-relaxed"
+          >
+            We accept the following payment systems
+          </h1>
+          <div class="flex space-x-5">
+            <img src="images/Visa.png" alt="" />
+            <img src="images/Mastercard.png" alt="" />
+            <img src="images/Bitcoin.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex min-w-full flex-col lg:flex-row justify-between items-center mt-40"
+      >
+        <div>&#169;2021 CRAPPO. All rights reserved</div>
+        <div class="w-[75%] lg:w-[20%] flex space-x-10 mt-5">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
